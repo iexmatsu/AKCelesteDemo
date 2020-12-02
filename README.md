@@ -1,27 +1,25 @@
+
 # AKCelesteDemo
 
 ## Introduction
 
-### This is a sound design experimental project based on MixAndJam's CelesteMovementDemo, 
-
-- https://youtu.be/STyY26a_dPY
-
-### sound authoring with Audiokinetic's audio middleware Wwise, all sounds are created in a Synth-Based way, more than half of the sounds are done with SynthOne as the sound source.
+This is a sound design experimental project based on MixAndJam's CelesteMovementDemo, sound authoring with Audiokinetic's audio middleware Wwise, all sounds are created in a Synth-Based way, more than half of the sounds are done with SynthOne as the sound source.
+  
+The Original Youtube video link - https://youtu.be/STyY26a_dPY
 
 ## Usage
 
-### Since this experimental project was designed in a very "audio-based" way,
-
-### after downloading and unzipping, please press generate Soundbanks button in Wwise Picker, otherwise the game will not work properly.
+  Since this experimental project was designed in a very "audio-based" way, after downloading and unzipping, please press generate Soundbanks button in Wwise Picker, otherwise the game will not work properly.
 
 ## Sound Features
 
 ### Time Freeze state
 
 - Tried to implement some of Quantum Break's sound design in this small-scale project, introducd slow motion, time standstill, and more.
+
 - Reverse-able dymamic music
 
-	- It is also a tribute to Quantum Break, referencing the time travel music design.
+- It is also a tribute to Quantum Break, referencing the time travel music design.
 
 ### Dash
 
@@ -40,4 +38,3 @@
 ### Custom bitcrusher plugin
 
 - Simple Bitcrusher effect plug-in made with PureData+Heavy, Win64 and x86 versions of the plug-in are included in the project.
-
