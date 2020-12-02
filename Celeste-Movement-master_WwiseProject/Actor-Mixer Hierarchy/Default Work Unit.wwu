@@ -1,0 +1,3611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Character" ID="{60A029F3-39D3-4C68-9391-BD85F3993536}" ShortID="164714576">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Jump" ID="{D993634A-E71D-49D7-A2F3-808AC16A6409}" ShortID="610545131">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{57980217-16FF-4DB5-B42E-D437766963B1}"/>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{A65EB88B-E5A4-49CF-B6CB-52FDA413955E}" ShortID="200755037">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Jump_Rise" ID="{B01C3661-3ED0-4400-BD0C-19A4CCB413A8}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1C81D7A1-112A-45DE-B01E-CA7830FDF169}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>60</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{49993061-60D7-4582-8A22-11D41C08AC25}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10.4076202999829</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{D249E2B6-81D8-469D-A836-C4BD8D4685D0}" ShortID="509108278" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{A7ECF42F-4FA4-4CB4-9453-9AF727D5C06B}" ShortID="738849210">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Jump_Rise" ID="{B01C3661-3ED0-4400-BD0C-19A4CCB413A8}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C46EA4A5-DAD1-4023-AA83-CA56F41550BC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>200</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>20000</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="NoiseLevel" Type="Real32" Value="-10"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-9"/>
+										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+										<Property Name="Osc2Level" Type="Real32" Value="0"/>
+										<Property Name="Osc2Waveform" Type="int32" Value="1"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{D6C4EF83-AA20-4E83-8C40-C404F33FA413}" ShortID="436104759">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A1C7007F-F31B-49B6-A360-023DB5EEA8E1}" ShortID="649588791">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																		<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{75420BF4-68A0-4F78-A5FE-88880066DEEA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{AAED9897-0FF4-4C7E-88B1-B217AD7993EF}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{D249E2B6-81D8-469D-A836-C4BD8D4685D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Landing" ID="{CA6B32C4-9784-4F7D-A754-1613BFFF4BD9}" ShortID="850284108">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>44</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{963FA1F5-CC3B-43DC-93EA-FC2961B5C4B3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-401</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{92A0BFF1-1410-491F-8640-4C548032F80E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{9CD6A5D7-F65B-4116-91D5-91A258528285}" ShortID="937409725" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="NoiseLevel" Type="Real32" Value="0"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{89F65587-18D0-4FD4-AC83-ACE791FC2B6A}" ShortID="123297419">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{3E8E2760-DCBF-4549-8D32-8728C005EBFB}" ShortID="880517245">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																		<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																		<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.05"/>
+																		<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.2"/>
+																		<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D07C00A1-DE5D-4128-9D15-73AC8CC81D56}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{10CA86FF-F537-43FC-85E9-0ADFC29A81BA}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-100"/>
+										<Property Name="PanY" Type="Real64" Value="-100"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{9CD6A5D7-F65B-4116-91D5-91A258528285}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Dash" ID="{AFCF2613-8532-4364-934B-2112D12FFB9F}" ShortID="158711072">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10.384538070547</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Bass" ID="{3A087817-9FC2-49F5-A22F-F82718944EF0}" ShortID="812658447">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7.62700588982413</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{FB5606E2-FEFD-4C0F-B4DE-D3D0796B58EE}" ShortID="666899717" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{8ADD1786-1043-4035-9255-C1FF92C13445}" ShortID="25466489">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Dash_Bass_ADSR" ID="{9A49C8FC-FA68-41B1-A649-DA31790F3EB7}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9ABFE9CF-3B22-4B7B-82CA-41EAACE51133}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1000</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>20</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="FmAmount" Type="Real32" Value="1"/>
+												<Property Name="Osc1Transpose" Type="int32" Value="-2400"/>
+												<Property Name="Osc2Transpose" Type="int32" Value="-2400"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{B8E6A7FC-1255-4BEE-B91B-A4874A92E9F1}" ShortID="190706895">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E49068BF-1C71-4501-99D9-8A16C96902AE}" ShortID="440733209">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.5"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{24ABA74B-23E9-4EC8-AD42-3FCAEDFEFDA8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{FB5606E2-FEFD-4C0F-B4DE-D3D0796B58EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WhooshL" ID="{895932C3-AD3E-4263-8FDE-3F9FEE4BAD19}" ShortID="547736822">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{9F217D52-D36F-4DF5-889C-0AF28E8B4CEC}" ShortID="70713666">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Dash_Whoosh_ADSR" ID="{18CB91FA-E27D-47D9-893C-EC867A642777}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5FEB229E-F7BA-4CF7-B19F-FFE7C3EF9F91}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1.1</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{68E59CBF-6335-48F7-B9A9-E3427BF7F42E}" ShortID="266111066">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="TimeFreezeL" ID="{9C8512CD-87C3-40DE-9D69-FD96C6E1D518}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{7631286B-72D1-4BE2-B8CD-181CB94564C5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="TimeFreezeL" ID="{32AF4737-6F0B-4507-A929-7F4D7D5858A2}" WorkUnitID="{FDF32220-446B-4712-AE51-C5E099852E6A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{5E3FD48C-5867-49F4-8AE7-CDFE9FF6BF6C}" ShortID="898587039" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="NoiseLevel" Type="Real32" Value="-6"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{F01C9416-27C2-44F3-8C16-9F31C6CDF3AF}" ShortID="588222170">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{CC04C963-3BB9-4655-AAFC-38D6DCEBD650}" ShortID="500860041">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.1"/>
+																				<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.4"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F0DF9DB5-A38A-40BA-936E-E7028833A53A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{167534B5-2598-45EA-9A0B-641D039EE7C8}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-100"/>
+												<Property Name="PanY" Type="Real64" Value="100"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{98285255-04A5-47F3-B918-81343A158E8A}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Whoosh_Path" ID="{682E3806-C0B7-47FD-AA0F-832D711621FB}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>44.93671</XPos>
+															<YPos>37.57962</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-36.07595</XPos>
+															<YPos>16.5605</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>13.29114</XPos>
+															<YPos>-28.66242</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_01" ID="{4C8675A5-67B0-4D20-9C4F-061BD9DBBECB}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-22.1519</XPos>
+															<YPos>32.48408</YPos>
+															<Flags>0</Flags>
+															<Time>1000</Time>
+														</Point>
+														<Point>
+															<XPos>18.3544303797468</XPos>
+															<YPos>16.5605095541401</YPos>
+															<Flags>0</Flags>
+															<Time>2000</Time>
+														</Point>
+														<Point>
+															<XPos>-0.632911392405063</XPos>
+															<YPos>-7.00636942675159</YPos>
+															<Flags>0</Flags>
+															<Time>3000</Time>
+														</Point>
+														<Point>
+															<XPos>-39.873417721519</XPos>
+															<YPos>-20.3821656050955</YPos>
+															<Flags>0</Flags>
+															<Time>4000</Time>
+														</Point>
+														<Point>
+															<XPos>9.49367088607595</XPos>
+															<YPos>-47.7707006369427</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_02" ID="{A280AEC2-198B-463A-9867-A93AEAA83AC4}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-69.62026</XPos>
+															<YPos>42.67516</YPos>
+															<Flags>0</Flags>
+															<Time>833</Time>
+														</Point>
+														<Point>
+															<XPos>33.5443037974684</XPos>
+															<YPos>22.9299363057325</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-24.6835443037975</XPos>
+															<YPos>4.45859872611466</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>1.26582278481013</XPos>
+															<YPos>-22.9299363057325</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-20.253164556962</XPos>
+															<YPos>-37.5796178343949</YPos>
+															<Flags>0</Flags>
+															<Time>4166</Time>
+														</Point>
+														<Point>
+															<XPos>7.59493670886076</XPos>
+															<YPos>-47.1337579617834</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_03" ID="{AF409EF4-46CD-4348-83C4-E3624CAB6339}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-43.67088</XPos>
+															<YPos>33.75796</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>51.26582</XPos>
+															<YPos>31.21019</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-23.41772</XPos>
+															<YPos>-40.12739</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>5.69620253164557</XPos>
+															<YPos>-45.2229299363057</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_04" ID="{524C6114-A791-40DF-9C12-D5A70553436A}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-37.97468</XPos>
+															<YPos>36.30573</YPos>
+															<Flags>0</Flags>
+															<Time>714</Time>
+														</Point>
+														<Point>
+															<XPos>31.01266</XPos>
+															<YPos>31.84713</YPos>
+															<Flags>0</Flags>
+															<Time>1428</Time>
+														</Point>
+														<Point>
+															<XPos>70.25316</XPos>
+															<YPos>-5.09554</YPos>
+															<Flags>0</Flags>
+															<Time>2142</Time>
+														</Point>
+														<Point>
+															<XPos>-52.5316455696203</XPos>
+															<YPos>-29.2993630573248</YPos>
+															<Flags>0</Flags>
+															<Time>2857</Time>
+														</Point>
+														<Point>
+															<XPos>18.9873417721519</XPos>
+															<YPos>-31.8471337579618</YPos>
+															<Flags>0</Flags>
+															<Time>3571</Time>
+														</Point>
+														<Point>
+															<XPos>-27.21519</XPos>
+															<YPos>-83.43949</YPos>
+															<Flags>0</Flags>
+															<Time>4285</Time>
+														</Point>
+														<Point>
+															<XPos>48.73418</XPos>
+															<YPos>-48.40764</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{5E3FD48C-5867-49F4-8AE7-CDFE9FF6BF6C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WhooshR" ID="{02A9FA42-7E43-4EE4-98D1-10BF7526830E}" ShortID="389739066">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{1CCE5C80-43CD-4CE9-8058-3E3735FC27ED}" ShortID="1006581892">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Dash_Whoosh_ADSR" ID="{18CB91FA-E27D-47D9-893C-EC867A642777}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{A28DC0F5-48AB-46F2-A346-1FD3E68FADF5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1.05188377673951</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{8DE406A4-A373-4F04-983D-1759829E449A}" ShortID="31540946">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="TimeFreezeR" ID="{84746962-2B79-4520-A3B5-677844CCBFF1}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{69AE3E85-49F6-4CD6-BCDB-002B53547D3A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="TimeFreezeR" ID="{D34F02E8-3E12-4BA9-A7E2-EE80DBD65BFA}" WorkUnitID="{FDF32220-446B-4712-AE51-C5E099852E6A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{41ED8A82-833C-4F41-8D36-F796FD19EC3D}" ShortID="542869342" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="NoiseLevel" Type="Real32" Value="-6"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{112A1B73-77A9-432C-8B3B-1516E7397701}" ShortID="462624965">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{4713CCA7-4E68-40A1-A7E2-B3F0CD58BB9B}" ShortID="2010376">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.1"/>
+																				<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.4"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F1F7AC5E-B65D-4CF1-B9D2-C030B7A038C9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{C904209F-334D-4351-AE37-6199E7EF3D1D}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="100"/>
+												<Property Name="PanY" Type="Real64" Value="100"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{70911641-08E4-44A1-807B-6866820B60A6}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Whoosh_Path" ID="{00FE3162-7AA6-4853-8B27-6C5F52C95833}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>44.93671</XPos>
+															<YPos>37.57962</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-36.07595</XPos>
+															<YPos>16.5605</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>13.29114</XPos>
+															<YPos>-28.66242</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_01" ID="{29552C3F-1C46-4848-965B-2DDCA5760649}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-22.1519</XPos>
+															<YPos>32.48408</YPos>
+															<Flags>0</Flags>
+															<Time>1000</Time>
+														</Point>
+														<Point>
+															<XPos>18.3544303797468</XPos>
+															<YPos>16.5605095541401</YPos>
+															<Flags>0</Flags>
+															<Time>2000</Time>
+														</Point>
+														<Point>
+															<XPos>-0.632911392405063</XPos>
+															<YPos>-7.00636942675159</YPos>
+															<Flags>0</Flags>
+															<Time>3000</Time>
+														</Point>
+														<Point>
+															<XPos>-39.873417721519</XPos>
+															<YPos>-20.3821656050955</YPos>
+															<Flags>0</Flags>
+															<Time>4000</Time>
+														</Point>
+														<Point>
+															<XPos>9.49367088607595</XPos>
+															<YPos>-47.7707006369427</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_02" ID="{591157C3-1422-4B22-80AA-76390C501E3A}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-69.62026</XPos>
+															<YPos>42.67516</YPos>
+															<Flags>0</Flags>
+															<Time>833</Time>
+														</Point>
+														<Point>
+															<XPos>33.5443037974684</XPos>
+															<YPos>22.9299363057325</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-24.6835443037975</XPos>
+															<YPos>4.45859872611466</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>1.26582278481013</XPos>
+															<YPos>-22.9299363057325</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-20.253164556962</XPos>
+															<YPos>-37.5796178343949</YPos>
+															<Flags>0</Flags>
+															<Time>4166</Time>
+														</Point>
+														<Point>
+															<XPos>7.59493670886076</XPos>
+															<YPos>-47.1337579617834</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_03" ID="{AEEDF4A7-FA50-47B4-A90A-D88F03F4FDEF}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-43.67088</XPos>
+															<YPos>33.75796</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>51.26582</XPos>
+															<YPos>31.21019</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-23.41772</XPos>
+															<YPos>-40.12739</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>5.69620253164557</XPos>
+															<YPos>-45.2229299363057</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whoosh_Path_04" ID="{0D4923BE-C53B-4420-B0C9-BA4451ED7CEE}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-37.97468</XPos>
+															<YPos>36.30573</YPos>
+															<Flags>0</Flags>
+															<Time>714</Time>
+														</Point>
+														<Point>
+															<XPos>31.01266</XPos>
+															<YPos>31.84713</YPos>
+															<Flags>0</Flags>
+															<Time>1428</Time>
+														</Point>
+														<Point>
+															<XPos>70.25316</XPos>
+															<YPos>-5.09554</YPos>
+															<Flags>0</Flags>
+															<Time>2142</Time>
+														</Point>
+														<Point>
+															<XPos>-52.5316455696203</XPos>
+															<YPos>-29.2993630573248</YPos>
+															<Flags>0</Flags>
+															<Time>2857</Time>
+														</Point>
+														<Point>
+															<XPos>18.9873417721519</XPos>
+															<YPos>-31.8471337579618</YPos>
+															<Flags>0</Flags>
+															<Time>3571</Time>
+														</Point>
+														<Point>
+															<XPos>-27.21519</XPos>
+															<YPos>-83.43949</YPos>
+															<Flags>0</Flags>
+															<Time>4285</Time>
+														</Point>
+														<Point>
+															<XPos>48.73418</XPos>
+															<YPos>-48.40764</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{41ED8A82-833C-4F41-8D36-F796FD19EC3D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{F4E73046-F2F6-4C90-990F-065E8336B9B4}"/>
+							</PositioningInfo>
+						</BlendContainer>
+						<Sound Name="Walk" ID="{34EEA86A-1066-4C54-AAEC-F17748247B8E}" ShortID="701483774">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>35</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{43FC63E3-0A9E-4416-A4D8-CBC15E4B66FF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>244</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6658E6DE-1B82-48CA-A2CE-62BFDA8AE256}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{3A387A8C-C6AB-4332-B10A-A35F84C03BCB}" ShortID="152645957" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="NoiseLevel" Type="Real32" Value="0"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{DAAB8669-3ED5-4C4C-819C-65DF3C00BB07}" ShortID="801079826">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{41A62FC0-5236-4EB9-A6F4-B5496F85E5EA}" ShortID="764555348">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																		<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																		<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.025"/>
+																		<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BAF63A34-8D26-490D-97F5-54D5868C7AFA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{2432DC5D-6E61-414D-AEF9-03514EB629F3}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{3A387A8C-C6AB-4332-B10A-A35F84C03BCB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="NaturalWallSlide" ID="{BF36E9AA-A9DB-4627-B75E-0A04E0928F85}" ShortID="78679881">
+							<Comment>Trigger once when initialize the scene (level)</Comment>
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{E38A62F8-3175-4EE9-8623-39C408ADEBC7}" ShortID="102619343">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{CFD6C7A1-88FA-4086-AE29-CFC3E83E2C77}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>15</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{1B96268D-4AF9-4BD1-A9CC-2C3038991A11}" ShortID="664929051">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{33B28661-981E-4013-B806-073DD1875818}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>InvertedSCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>20</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{02BE6AF0-3236-43FB-AAAF-990BB550877E}" ShortID="19989868">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{46AEC1B0-3DC0-436D-9361-A1A3E865702F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>600</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-4.3756</XPos>
+														<YPos>71</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-2.37872</XPos>
+														<YPos>-509</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-500</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SeekGrainRec" ID="{76B87E32-8C75-4DED-9609-E0C11D40CAE8}">
+									<Language>SFX</Language>
+									<AudioFile>Recorder.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="525766674"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SeekGrainRec" ID="{76B87E32-8C75-4DED-9609-E0C11D40CAE8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="WallClimb" ID="{3299F488-A9EF-4410-8CCB-A3D4B84470E4}" ShortID="901439921">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-0.858585852178874</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WallClimb_Noise" ID="{9C771284-24DC-4BCD-B705-77D4CF92E611}" ShortID="772411014">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{082FE387-AC99-4A92-ACD4-C2B7CBF6683A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2DE31478-E43A-4CA4-829A-38F1A6631437}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{8517A4CD-C7C7-4200-A962-44D2289ED176}" ShortID="771777315" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="NoiseLevel" Type="Real32" Value="0"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{B776D472-151B-4284-8542-8F1E4F045B09}" ShortID="698926659">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{F9DA5253-F9F5-4A6F-A0C5-EE8DD57FCF81}" ShortID="654634842">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.025"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3A42B2FD-D6F2-4A41-BA78-2A387DDD304F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{8517A4CD-C7C7-4200-A962-44D2289ED176}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WallClimb_Tonal" ID="{A7CACC20-2169-493A-9740-7CE3FD53D5D0}" ShortID="506475651">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{392A9069-4B06-4D08-8A0A-709372FAD0EC}" ShortID="589653044">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Jump_Rise" ID="{B01C3661-3ED0-4400-BD0C-19A4CCB413A8}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1DF91A17-5A69-4B80-A307-F84757C6C98C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>60</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{947D12E3-2751-40EC-B556-85CA0368EE1E}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-21</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{3A6765CA-47FF-4C19-B332-9BE2D0A017D0}" ShortID="402581581" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{0C9774B5-39BF-41AF-B2F3-33E509227185}" ShortID="1064223142">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="WallClimbPitchEnv" ID="{CFF1BA90-712C-40E1-8373-C1B49CD481E2}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{522EC5F0-CF35-4EA8-98A9-7B92F5BFB05D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>300</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>3000</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Osc1Level" Type="Real32" Value="-9"/>
+												<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+												<Property Name="Osc2Level" Type="Real32" Value="3"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{A84AC7E2-C97A-421B-96E8-B26F30852A22}" ShortID="547094176">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{B6B9BD30-4B83-446F-B258-954417CC2388}" ShortID="703586541">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.1"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{38687A16-BF58-43BA-AF6D-833A0C45AA75}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{3A6765CA-47FF-4C19-B332-9BE2D0A017D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="GrabWallSlide" ID="{ACADF768-E3EA-4992-A4A8-50A652BB6B7D}" ShortID="45684708">
+							<Comment>Trigger once when initialize the scene (level)</Comment>
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{217DB6E0-7F2E-4FB8-A217-33A69B7B4761}" ShortID="810586508">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8232D53A-1815-4E30-BB19-97A46AA8440A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>15</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{327DEC3C-065F-435E-988A-2029C661C192}" ShortID="924864832">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{3A8D3CAC-2249-405A-B061-08778AF3067A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>20</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{464101E8-2F63-4E6A-AE34-A7B811E58BB2}" ShortID="947326622">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FD64F02E-AD0B-4C17-8017-6AC1971F00DE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>600</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-4.3756</XPos>
+														<YPos>71</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-2.37872</XPos>
+														<YPos>-509</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-500</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{384CD2CE-A03A-47E5-9D30-861E86CE9157}" ShortID="823826973">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FB0040B5-68F7-410C-9A12-DE7B0F0B4388}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-8</XPos>
+														<YPos>3</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SeekGrainRec" ID="{323CDE24-C351-4E11-A52C-6B141B8A5C72}">
+									<Language>SFX</Language>
+									<AudioFile>Recorder.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="525766674"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SeekGrainRec" ID="{323CDE24-C351-4E11-A52C-6B141B8A5C72}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Idle" ID="{CB3F8D7A-7486-40B9-84CB-68F7786D1699}" ShortID="460700526">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-88</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9.2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Idle_Ono" ID="{AD02EE5E-5359-4507-98B7-D706DFD5FCC4}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="WwiseMeter" ID="{2AD015F8-7578-4F9A-9AF7-DE3311A78B4A}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Silence_01" ID="{9F905487-5AF5-4B88-B4A3-EE7601604174}" ShortID="674989243">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="HvHCZBitcrusher_(Custom)" ID="{25C2AC11-EF2B-421D-BB19-3EAA10707C5C}" ShortID="417086040" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+													<PropertyList>
+														<Property Name="SampleRateDivisionL" Type="Real32" Value="6000"/>
+														<Property Name="SampleRateDivisionR" Type="Real32" Value="6000"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Char" ID="{8432225B-B58D-4D49-ABA2-87D5DCB46072}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{774F51DB-8B39-4BC2-A01C-BAAAB4B0F53D}" ShortID="317594076" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{774F51DB-8B39-4BC2-A01C-BAAAB4B0F53D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_02" ID="{9CA1F329-203C-4C91-BD2A-269D6AF25EA4}" ShortID="905807617">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="HvHCZBitcrusher_(Custom)" ID="{11AB0FFA-6B9C-4C09-8C67-E854921A7AD8}" ShortID="71703422" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+													<PropertyList>
+														<Property Name="SampleRateDivisionL" Type="Real32" Value="6000"/>
+														<Property Name="SampleRateDivisionR" Type="Real32" Value="6000"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Char" ID="{8432225B-B58D-4D49-ABA2-87D5DCB46072}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{77CAC0CC-7293-44D9-8789-E5742E71DD6F}" ShortID="116970051" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{77CAC0CC-7293-44D9-8789-E5742E71DD6F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_03" ID="{1B47465D-59B3-4E31-A1D2-5D9A2F6AE392}" ShortID="83818506">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="HvHCZBitcrusher_(Custom)" ID="{FF8C5F89-8FA0-4D77-B511-813E92C1F6E6}" ShortID="119463450" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+													<PropertyList>
+														<Property Name="SampleRateDivisionL" Type="Real32" Value="6000"/>
+														<Property Name="SampleRateDivisionR" Type="Real32" Value="6000"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Char" ID="{8432225B-B58D-4D49-ABA2-87D5DCB46072}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{4CCCDAFA-CE96-4AB0-8835-D2948450A65A}" ShortID="112191158" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{4CCCDAFA-CE96-4AB0-8835-D2948450A65A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_04" ID="{3463E943-0BF7-46EA-BE5F-E170D66DA90F}" ShortID="963042459">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="HvHCZBitcrusher_(Custom)" ID="{DC8FB6A2-9449-489F-B725-9527325FC4F4}" ShortID="630713502" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+													<PropertyList>
+														<Property Name="SampleRateDivisionL" Type="Real32" Value="6000"/>
+														<Property Name="SampleRateDivisionR" Type="Real32" Value="6000"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Char" ID="{8432225B-B58D-4D49-ABA2-87D5DCB46072}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{1001CD19-A19E-4D0C-9269-328AE76F8233}" ShortID="776093969" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{1001CD19-A19E-4D0C-9269-328AE76F8233}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_05" ID="{EE358103-E9EE-4B8A-9D86-6442B300BD26}" ShortID="492232178">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="HvHCZBitcrusher_(Custom)" ID="{E7C686C5-0B7E-495D-B607-7E5065DD6784}" ShortID="331056510" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+													<PropertyList>
+														<Property Name="SampleRateDivisionL" Type="Real32" Value="6000"/>
+														<Property Name="SampleRateDivisionR" Type="Real32" Value="6000"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Char" ID="{8432225B-B58D-4D49-ABA2-87D5DCB46072}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{C9AA16AF-73D6-4008-AB2A-1160CD650B2E}" ShortID="806224996" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{C9AA16AF-73D6-4008-AB2A-1160CD650B2E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="Blend_Robo_Voice" ID="{D40EFB4E-679E-4B01-9484-C25C6D517796}" ShortID="584302171">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>138</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Blips" ID="{E7C4CBD4-7780-4281-A88F-B70B62A9EDEE}" ShortID="218374483">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>13</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-463</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="HvHCZBitcrusher_(Custom)" ID="{9B593D0D-D640-46F0-A024-8360206FC624}" ShortID="667675916" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+															<PropertyList>
+																<Property Name="SampleRateDivisionL" Type="Real32" Value="10000"/>
+																<Property Name="SampleRateDivisionR" Type="Real32" Value="10000"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise_Time_Stretch_(Custom)" ID="{0BC12D55-068C-4684-AF0F-45F955824E23}" ShortID="926869512" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+															<PropertyList>
+																<Property Name="TimeStretch" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{6715C770-B853-4E5C-A737-F2A466C3F22E}" ShortID="932738000">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="TimeFreezeL" ID="{9C8512CD-87C3-40DE-9D69-FD96C6E1D518}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{194A6683-8542-4E14-B868-1623A48767D7}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>100</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>1600</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CrazyGrains 2" ID="{318A5E4C-B87E-4173-A930-3804BEB95601}" ShortID="213446781">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 2" ID="{88CE8E69-6988-4A6B-9985-AC59023CC0AA}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="912106797"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{5E97337A-E701-44B4-8078-5DE5CD54060A}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 2" ID="{88CE8E69-6988-4A6B-9985-AC59023CC0AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 4" ID="{AF38FED4-2421-460B-BDC4-71133C91498F}" ShortID="380013531">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 4" ID="{17D230BA-4999-4034-93B5-C5D96548D4D0}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="422063671"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{83012FEF-70E1-423F-BE00-11CC72FA0DDF}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 4" ID="{17D230BA-4999-4034-93B5-C5D96548D4D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 5" ID="{8A652810-8C71-4AC0-9385-C21BC7D354DB}" ShortID="462461711">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 5" ID="{C31DD855-5BE7-42C3-BDF6-40614BABD8B5}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="871149609"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{E5057FA3-A541-42A0-87AB-B610094108E5}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 5" ID="{C31DD855-5BE7-42C3-BDF6-40614BABD8B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 6" ID="{7C3779B0-AAD6-4C19-99F6-2A3712445A2E}" ShortID="435776582">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 6" ID="{263A490D-B846-4395-BF65-C8E139DEE0CF}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="194823686"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{65858691-7805-473A-95B6-C05F1B44D204}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 6" ID="{263A490D-B846-4395-BF65-C8E139DEE0CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 8" ID="{CFB4EB16-D5DA-4E83-9403-06BED8945D3B}" ShortID="188066458">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 8" ID="{C9364DEB-0FFF-44BA-9506-7360603240E9}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="574495815"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{61A0D9F2-2EF4-4384-B94C-73895557E4C1}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 8" ID="{C9364DEB-0FFF-44BA-9506-7360603240E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 13" ID="{CCA37F22-E71B-451A-8FE4-B26CA5BEB9FE}" ShortID="889985329">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 13" ID="{E2F8A919-1308-4967-9384-3D130C53C6E0}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 13.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="382739357"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{C177BC90-F1A8-4B1F-94E0-D23B1AA383B0}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 13" ID="{E2F8A919-1308-4967-9384-3D130C53C6E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 16" ID="{62B52104-5403-476B-B41C-178557990FF9}" ShortID="1073293523">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 16" ID="{263958DF-CAF1-4C55-A4CB-09E508174D7C}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 16.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="966482788"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{8F0E5F45-9551-43F6-B6E2-CFB4EC895709}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 16" ID="{263958DF-CAF1-4C55-A4CB-09E508174D7C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 20" ID="{AC5DD2F8-924D-4EC0-B420-5532FC2B40BC}" ShortID="491122805">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 20" ID="{377EF1CC-A166-4E64-95A3-7E6CD572574A}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 20.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="787250792"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{BAC672BC-54A5-4233-A4C5-67312FBDECD7}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 20" ID="{377EF1CC-A166-4E64-95A3-7E6CD572574A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 21" ID="{7FB7CCD8-A79B-4FB2-B971-4C33E7E9B307}" ShortID="842954818">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 21" ID="{1BB1EABC-0368-432D-8946-E815DFC46E82}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 21.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="589598835"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{D5A662EB-5E79-4065-B371-7A2A3BA551EB}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 21" ID="{1BB1EABC-0368-432D-8946-E815DFC46E82}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 22" ID="{FAC7BE86-97D8-48AD-9431-349874ADE790}" ShortID="230225196">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 22" ID="{903D626E-3B13-4D1D-B7D1-CD2584F79778}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 22.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="208171815"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{A0704E63-2D23-4236-99D0-3BA08FAC7C66}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 22" ID="{903D626E-3B13-4D1D-B7D1-CD2584F79778}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 23" ID="{B1B964E1-581F-4436-B368-0C6C394C7C1B}" ShortID="869221023">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 23" ID="{90298A2D-0FF4-4F6E-A37E-9D386233AF03}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 23.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="738639138"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{F915D4ED-AF07-47B3-B72D-5F7429CE378F}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 23" ID="{90298A2D-0FF4-4F6E-A37E-9D386233AF03}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 24" ID="{434DE82A-0599-45CD-9532-EDCB048643A5}" ShortID="779254674">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 24" ID="{034C483B-D01E-42AA-A5ED-6DD1888E8BA0}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 24.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="298193829"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{B81F237C-F3A2-4368-9F7F-D5B5C22ABC43}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 24" ID="{034C483B-D01E-42AA-A5ED-6DD1888E8BA0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 25" ID="{98D2A323-22C3-4BAD-9EB2-1399E92A2757}" ShortID="631328353">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 25" ID="{F2FA7BA4-DC6B-40DA-84BE-0E4D68777CA0}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 25.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="171360864"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{E2ECAB98-674E-4CB1-9332-53C0D03120E0}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 25" ID="{F2FA7BA4-DC6B-40DA-84BE-0E4D68777CA0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 31" ID="{424E2669-5FB5-416C-931E-DA8532729F5A}" ShortID="697320536">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 31" ID="{EE1215FA-F930-4D3D-82F3-F7CC3440C953}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 31.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="252355530"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{1FBA8E47-BFF8-4EA9-B068-F353B5A11868}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 31" ID="{EE1215FA-F930-4D3D-82F3-F7CC3440C953}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 32" ID="{EC57B8BF-7AEF-4903-9030-29CE35853B27}" ShortID="403779006">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 32" ID="{21E62804-1D24-40A5-96D5-C6345131663F}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 32.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="560212810"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{A7EFE517-1FAD-4B66-9298-33D5F21B05C9}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 32" ID="{21E62804-1D24-40A5-96D5-C6345131663F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 33" ID="{F559D321-3341-452B-A40B-2BCF0ECC419F}" ShortID="461888704">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 33" ID="{544BFBFE-FC37-48C8-BF84-BE3958A462D4}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 33.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13521681"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{09DEEBE0-0B26-4D31-9DC8-62E233C44D72}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 33" ID="{544BFBFE-FC37-48C8-BF84-BE3958A462D4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CrazyGrains 42" ID="{447F6681-E50D-442D-8976-8CC07B57260A}" ShortID="360606896">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CrazyGrains 42" ID="{4D1B3EE8-1488-49E4-A7F0-0118B01D244B}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CrazyGrains 42.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="25397287"/>
+															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{CC310DD7-8694-480E-BBE6-0B0830EEB9F6}" PluginName="Marker" CompanyID="0" PluginID="993"/>
+																</List>
+															</PluginInnerObjectList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CrazyGrains 42" ID="{4D1B3EE8-1488-49E4-A7F0-0118B01D244B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Voice_01" ID="{1A91E768-3F44-48D8-AC1E-5622F5F0C540}" ShortID="498983453">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7173F553-D658-4874-9135-37FD9DBD6D08}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="0.3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{66A28B95-A6B4-4895-896A-75F9A1AD540A}" ShortID="374744196">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Jump_Rise" ID="{B01C3661-3ED0-4400-BD0C-19A4CCB413A8}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{7F71CA3F-4ED7-4CAC-A2F1-A48100FCAA99}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>60</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Synth One" ID="{4162ADF1-90FF-4F83-A8DD-D5343FA5BDD7}" ShortID="192082226" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+													<PropertyList>
+														<Property Name="BaseFrequency" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{F5F012B4-D0F5-4FF8-921E-0F5DDE7059DF}" ShortID="226014561">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="S&amp;H_Robo_Voice" ID="{F091759E-A393-4547-91E4-D268C7B61B0D}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{2BF3A6F0-1A80-452F-86FA-CA5FE0DAD1AC}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>314.53516</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>3452.11581</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="FmAmount" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{1DA5C5C9-C802-4367-966D-A6F671824BBB}" ShortID="733799737">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="S&amp;H_Robo_Voice" ID="{F091759E-A393-4547-91E4-D268C7B61B0D}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{14449EA1-65A6-42C1-8190-A10440EE8C22}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>5</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="NoiseLevel" Type="Real32" Value="-10"/>
+														<Property Name="Osc1Level" Type="Real32" Value="-9"/>
+														<Property Name="Osc1Pwm" Type="Real32" Value="0"/>
+														<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+														<Property Name="Osc2Level" Type="Real32" Value="0"/>
+														<Property Name="Osc2Transpose" Type="int32" Value="-12"/>
+														<Property Name="Osc2Waveform" Type="int32" Value="2"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{6656961F-FD0E-4181-BBCC-6DF847A65F66}" ShortID="375549414">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{0CD5C692-CB3E-4EE9-BF93-CDAF64A08EC4}" ShortID="966078929">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.105">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{6C21F817-EB5B-4B97-A058-CBC0911EA5F3}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Max" Type="Real64" Value="0.1"/>
+																											<Property Name="Min" Type="Real64" Value="-0.1"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.074">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{C5650CBA-8BB0-48F0-B41F-2BB1326CD239}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Max" Type="Real64" Value="0.5"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.337">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{242D50AA-519A-4C8A-AEE1-047C558E6B65}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Min" Type="Real64" Value="-0.2"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{D90383AA-09BC-4249-A614-8C3F7462E7B5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Synth One" ID="{4162ADF1-90FF-4F83-A8DD-D5343FA5BDD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{C90136CF-5D15-4FF6-80D5-CB0EC7A40C69}"/>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<Sound Name="Falling" ID="{337EC91E-FC66-4652-873E-A820423A3BF4}" ShortID="717497890">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{D3E423A7-9C85-4C51-B60E-6C5A8FF8D0F9}" ShortID="487172600">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{28871F2B-BB7E-4BE6-9D64-8AA9E92DD67C}" ShortID="839514756">
+															<PropertyList>
+																<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																<Property Name="EnvelopeDecayTime" Type="Real64" Value="2"/>
+																<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+															</PropertyList>
+														</ModulatorEnvelope>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{3B8BCAF1-7ECE-4EFC-A340-00E8998E508E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>50</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{533733F8-3FD6-4C25-A144-F7275378618F}" ShortID="808646850">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="FallingLPF" ID="{215C19F8-5E11-40E1-95AC-5429487A9222}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8F8C7020-6985-4CA5-98B3-489C13E24FCE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>40</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>76</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-133</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{A5C17DA0-2646-448E-A315-B9A5CCD821E3}" ShortID="708712758">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{0376FAAB-B453-48D6-AD4B-73DB946907B5}" ShortID="405361912">
+															<PropertyList>
+																<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																<Property Name="EnvelopeDecayTime" Type="Real64" Value="1"/>
+																<Property Name="EnvelopeSustainLevel" Type="Real64" Value="50"/>
+																<Property Name="EnvelopeSustainTime" Type="Real64" Value="0.2"/>
+															</PropertyList>
+														</ModulatorEnvelope>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{046DC45B-C668-4271-ACDD-16CFCC62DF95}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{11EF6EB6-62D2-4167-9A04-20FF9D5F6F84}" ShortID="398529300">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorTime Name="Modulator Time (Custom)" ID="{657E2482-666D-4B05-B0AE-FD6CEC555377}" ShortID="445723080">
+															<PropertyList>
+																<Property Name="TimeModDuration" Type="Real64" Value="2"/>
+															</PropertyList>
+														</ModulatorTime>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{808F3BDF-BC91-4041-BDC5-A8A7BFDEB85E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>9</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{788101A4-CAA0-4DC8-816E-6F71B336F4EC}" ShortID="824744624" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="NoiseLevel" Type="Real32" Value="-10"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{16C11AD0-7412-4360-BA81-93C2E1F22376}" ShortID="178562914">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{EE88C26D-7476-4F86-8B33-3108AE36143D}" ShortID="157112820">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackCurve" Type="Real64" Value="0"/>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																		<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																		<Property Name="EnvelopeDecayTime" Type="Real64" Value="5"/>
+																		<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+																		<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{391B9D83-26EC-466E-9E55-496D8C77406D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{788101A4-CAA0-4DC8-816E-6F71B336F4EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="AMB" ID="{F54637E8-5B08-40B8-8CFC-54BE91547BB0}" ShortID="34545566">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-0.0449167678932511</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AMB" ID="{0FD55FA1-5619-4B2C-B3F7-8C6F950FD335}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Wind" ID="{438F572F-5768-4FA3-B181-95F6F85AD597}" ShortID="805573153">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{7412B3CC-CD88-4263-9E3D-F6DAC421CF39}" ShortID="645489678">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AMB_Wind_LFO" ID="{942BC13F-46F3-406E-9FFB-F62A76CEC9C2}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1B59FA4B-7439-4318-BEDA-379966565B8A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>8</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>44</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{93AC9571-BA0B-403B-B6A4-A2BA4824DB38}" ShortID="332675689">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AMB_Wind_LFO" ID="{942BC13F-46F3-406E-9FFB-F62A76CEC9C2}" WorkUnitID="{D7C32510-D614-4D1A-A493-042D779DD8FD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5AEDF07D-CC52-4598-A368-DAF59A8FD04D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>52</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>82</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-0.0449167678932511</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C13FC022-9F18-4B08-AAB7-3D4D737290CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{09EBA2D2-78D9-428D-8E63-B97C945C0AFD}" ShortID="530693515" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="NoiseLevel" Type="Real32" Value="-15"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{177AAD39-8F25-4061-96D6-C635EA7584B9}" ShortID="928969397">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{7C15419F-3F4B-4D1D-B6D6-F4CD5EE9B40B}" ShortID="458955080">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{79AB6EEF-DCCA-4A13-9E76-2928991E1683}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{B6C14AD5-62B3-4E04-A374-5CE65CC66CAE}"/>
+								<Position Name="" ID="{83D0CB58-F762-49DC-B6BD-A2F59CA44BDD}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Wind_Path" ID="{B7530871-C564-4EA8-AA96-82302CD5F722}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="10000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-5.6962</XPos>
+													<YPos>38.53503</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>14.55696</XPos>
+													<YPos>30.57325</YPos>
+													<Flags>0</Flags>
+													<Time>909</Time>
+												</Point>
+												<Point>
+													<XPos>21.51899</XPos>
+													<YPos>-3.18471</YPos>
+													<Flags>0</Flags>
+													<Time>1818</Time>
+												</Point>
+												<Point>
+													<XPos>-31.6455696202532</XPos>
+													<YPos>-10.1910828025478</YPos>
+													<Flags>0</Flags>
+													<Time>2727</Time>
+												</Point>
+												<Point>
+													<XPos>-20.8860759493671</XPos>
+													<YPos>30.5732484076433</YPos>
+													<Flags>0</Flags>
+													<Time>3636</Time>
+												</Point>
+												<Point>
+													<XPos>-3.16456</XPos>
+													<YPos>-33.12102</YPos>
+													<Flags>0</Flags>
+													<Time>4545</Time>
+												</Point>
+												<Point>
+													<XPos>8.22785</XPos>
+													<YPos>-19.74522</YPos>
+													<Flags>0</Flags>
+													<Time>5454</Time>
+												</Point>
+												<Point>
+													<XPos>-1.26582278481013</XPos>
+													<YPos>21.656050955414</YPos>
+													<Flags>0</Flags>
+													<Time>6363</Time>
+												</Point>
+												<Point>
+													<XPos>15.18987</XPos>
+													<YPos>22.29299</YPos>
+													<Flags>0</Flags>
+													<Time>7272</Time>
+												</Point>
+												<Point>
+													<XPos>14.55696</XPos>
+													<YPos>6.36943</YPos>
+													<Flags>0</Flags>
+													<Time>8181</Time>
+												</Point>
+												<Point>
+													<XPos>-27.21519</XPos>
+													<YPos>-26.75159</YPos>
+													<Flags>0</Flags>
+													<Time>9090</Time>
+												</Point>
+												<Point>
+													<XPos>-5.6962</XPos>
+													<YPos>38.8535</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Wind_Path_01" ID="{0993CB4D-C953-453F-AC9F-07DFE16CC059}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="10000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>10.12658</XPos>
+													<YPos>18.47134</YPos>
+													<Flags>0</Flags>
+													<Time>666</Time>
+												</Point>
+												<Point>
+													<XPos>-16.4556962025317</XPos>
+													<YPos>4.45859872611466</YPos>
+													<Flags>0</Flags>
+													<Time>1333</Time>
+												</Point>
+												<Point>
+													<XPos>17.0886075949367</XPos>
+													<YPos>-6.36942675159236</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>15.1898734177215</XPos>
+													<YPos>26.1146496815287</YPos>
+													<Flags>0</Flags>
+													<Time>2666</Time>
+												</Point>
+												<Point>
+													<XPos>-11.3924050632912</XPos>
+													<YPos>-7.64331210191082</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>-48.7341772151899</XPos>
+													<YPos>-14.6496815286624</YPos>
+													<Flags>0</Flags>
+													<Time>3999</Time>
+												</Point>
+												<Point>
+													<XPos>-1.26582278481013</XPos>
+													<YPos>-31.8471337579618</YPos>
+													<Flags>0</Flags>
+													<Time>4666</Time>
+												</Point>
+												<Point>
+													<XPos>24.0506329113924</XPos>
+													<YPos>-29.2993630573248</YPos>
+													<Flags>0</Flags>
+													<Time>5333</Time>
+												</Point>
+												<Point>
+													<XPos>-42.4050632911392</XPos>
+													<YPos>12.1019108280255</YPos>
+													<Flags>0</Flags>
+													<Time>6000</Time>
+												</Point>
+												<Point>
+													<XPos>37.9746835443038</XPos>
+													<YPos>7.00636942675159</YPos>
+													<Flags>0</Flags>
+													<Time>6666</Time>
+												</Point>
+												<Point>
+													<XPos>-25.3164556962025</XPos>
+													<YPos>-56.0509554140127</YPos>
+													<Flags>0</Flags>
+													<Time>7333</Time>
+												</Point>
+												<Point>
+													<XPos>31.64557</XPos>
+													<YPos>-12.10191</YPos>
+													<Flags>0</Flags>
+													<Time>8000</Time>
+												</Point>
+												<Point>
+													<XPos>-32.9113924050633</XPos>
+													<YPos>40.7643312101911</YPos>
+													<Flags>0</Flags>
+													<Time>8666</Time>
+												</Point>
+												<Point>
+													<XPos>29.1139240506329</XPos>
+													<YPos>36.9426751592357</YPos>
+													<Flags>0</Flags>
+													<Time>9333</Time>
+												</Point>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50.31847</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Wind_Path_02" ID="{25F82487-00F8-4856-B98A-4069B77FC657}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="10000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-21.5189873417722</XPos>
+													<YPos>27.3885350318471</YPos>
+													<Flags>0</Flags>
+													<Time>833</Time>
+												</Point>
+												<Point>
+													<XPos>13.2911392405063</XPos>
+													<YPos>15.9235668789809</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>-32.2784810126582</XPos>
+													<YPos>-7.00636942675159</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>16.4556962025316</XPos>
+													<YPos>-20.3821656050955</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>31.0126582278481</XPos>
+													<YPos>35.031847133758</YPos>
+													<Flags>0</Flags>
+													<Time>4166</Time>
+												</Point>
+												<Point>
+													<XPos>-37.34177</XPos>
+													<YPos>9.55414</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>13.92405</XPos>
+													<YPos>0.63694</YPos>
+													<Flags>0</Flags>
+													<Time>5833</Time>
+												</Point>
+												<Point>
+													<XPos>-7.59494</XPos>
+													<YPos>-5.73248</YPos>
+													<Flags>0</Flags>
+													<Time>6666</Time>
+												</Point>
+												<Point>
+													<XPos>31.0126582278481</XPos>
+													<YPos>-32.484076433121</YPos>
+													<Flags>0</Flags>
+													<Time>7499</Time>
+												</Point>
+												<Point>
+													<XPos>-20.8860759493671</XPos>
+													<YPos>-36.3057324840764</YPos>
+													<Flags>0</Flags>
+													<Time>8333</Time>
+												</Point>
+												<Point>
+													<XPos>43.6708860759494</XPos>
+													<YPos>3.82165605095541</YPos>
+													<Flags>0</Flags>
+													<Time>9166</Time>
+												</Point>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>49.04459</YPos>
+													<Flags>0</Flags>
+													<Time>10000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{09EBA2D2-78D9-428D-8E63-B97C945C0AFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

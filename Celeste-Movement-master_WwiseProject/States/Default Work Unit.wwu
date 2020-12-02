@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E6290456-1B90-4DAD-A9C5-61D916A81060}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{E6290456-1B90-4DAD-A9C5-61D916A81060}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="TimeFreezeOnOrOff" ID="{CBFB4C90-039C-4924-85FC-25073F8A133A}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2A6AD6AB-6455-4878-9953-169E710437A0}"/>
+						<State Name="On" ID="{96CEE1D5-C9BE-4636-8195-39356C2FC1FE}"/>
+						<State Name="Off" ID="{4C673486-5D37-4447-8AC5-F37F78407256}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

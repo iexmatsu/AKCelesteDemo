@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617c81cc188d7b34e8e08921736c106d, type: 3}
+  m_Name: 5DC51D85-F658-4CEA-8BE1-A7466AC4834D
+  m_EditorClassIdentifier: 
+  objectName: TalkingVol
+  id: 3088734844
+  guid: 5DC51D85-F658-4CEA-8BE1-A7466AC4834D

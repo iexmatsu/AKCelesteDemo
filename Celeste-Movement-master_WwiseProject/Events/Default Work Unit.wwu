@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1540532D-1C09-48D3-86F5-A3F383519190}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{1540532D-1C09-48D3-86F5-A3F383519190}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{764D4693-AB88-4A5B-836B-5EAB79755C7B}" ShortID="942821838">
+					<ChildrenList>
+						<Event Name="WM_CM_SFX_Dash" ID="{0A6C6154-A035-4AB9-A933-D7CC651470A1}">
+							<ChildrenList>
+								<Action Name="" ID="{7109296A-9665-455F-8ED5-5419C479384F}" ShortID="612802364">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dash" ID="{AFCF2613-8532-4364-934B-2112D12FFB9F}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83F6E017-896F-4E7E-B58A-AEE97B5B5ECD}" ShortID="444137609">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dash" ID="{AFCF2613-8532-4364-934B-2112D12FFB9F}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_Walk" ID="{A23A1D30-6CBE-47EC-8CBB-7149FEED258F}">
+							<ChildrenList>
+								<Action Name="" ID="{55D72E49-3329-49F1-9F83-BD9E18EE9EE8}" ShortID="372047621">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walk" ID="{34EEA86A-1066-4C54-AAEC-F17748247B8E}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB6E310E-D8EF-46BD-9B4F-C2A9C462150F}" ShortID="676083248">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walk" ID="{34EEA86A-1066-4C54-AAEC-F17748247B8E}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_Landing" ID="{BF2C3FB3-09F2-4FDA-A385-7FFB34E0D40C}">
+							<ChildrenList>
+								<Action Name="" ID="{7EF69F00-7DA1-4150-97F5-AA4A5736BB6F}" ShortID="486443932">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{CA6B32C4-9784-4F7D-A754-1613BFFF4BD9}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83A89A8F-F3E0-484B-8465-E3C994A1D05E}" ShortID="845487771">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{CA6B32C4-9784-4F7D-A754-1613BFFF4BD9}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_Jump" ID="{A391F0C7-7E5E-4F6F-B3F9-E5E9F64EFDE4}">
+							<ChildrenList>
+								<Action Name="" ID="{4748B697-90CD-4D57-9DE8-CC5E9B064276}" ShortID="429134006">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{D993634A-E71D-49D7-A2F3-808AC16A6409}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2AB7F611-853F-4FD5-9E00-909F05C7741C}" ShortID="839405443">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{D993634A-E71D-49D7-A2F3-808AC16A6409}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_NatrualWallSlide_Start" ID="{A63E5D0F-EB7C-44FA-BD61-6E1743E72B72}">
+							<ChildrenList>
+								<Action Name="" ID="{E4D48D1B-7488-478C-9707-AC5D5E3FF759}" ShortID="623572796">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NaturalWallSlide" ID="{BF36E9AA-A9DB-4627-B75E-0A04E0928F85}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_WallClimb" ID="{22A5977E-1718-465F-B45F-378C4D834FC1}">
+							<ChildrenList>
+								<Action Name="" ID="{1F109AC9-117D-4B54-9CC0-FDA4F549FB4C}" ShortID="142097838">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WallClimb" ID="{3299F488-A9EF-4410-8CCB-A3D4B84470E4}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7162CA71-0E40-495C-86E7-C124AA1D5D7B}" ShortID="1052319459">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WallClimb" ID="{3299F488-A9EF-4410-8CCB-A3D4B84470E4}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_NatrualWallSlide_Stop" ID="{6E48C10F-39B9-4EE0-B2CB-21B9BA6B7F11}">
+							<ChildrenList>
+								<Action Name="" ID="{7FF371E2-E3AA-4221-8B22-14D4BAA99A9B}" ShortID="659869027">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NaturalWallSlide" ID="{BF36E9AA-A9DB-4627-B75E-0A04E0928F85}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_GrabWallSlide_Start" ID="{3F00DB0A-E9AD-4529-A7E7-9D1B9BC09B8B}">
+							<ChildrenList>
+								<Action Name="" ID="{57BE12DC-E317-4344-B7B9-0D98F226CD74}" ShortID="711496376">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GrabWallSlide" ID="{ACADF768-E3EA-4992-A4A8-50A652BB6B7D}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_GrabWallSlide_Stop" ID="{F47B2A41-259F-469F-975B-934A94564FD3}">
+							<ChildrenList>
+								<Action Name="" ID="{4BD700F2-1F22-431C-8FCC-121947F1F962}" ShortID="154899190">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GrabWallSlide" ID="{ACADF768-E3EA-4992-A4A8-50A652BB6B7D}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_Idle" ID="{C58D78CD-4793-4040-B80C-3D5DC89CF011}">
+							<ChildrenList>
+								<Action Name="" ID="{969136F7-C5FD-4FE4-BF39-2642CEB065E5}" ShortID="332524222">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Idle" ID="{CB3F8D7A-7486-40B9-84CB-68F7786D1699}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_SFX_Falling" ID="{DCCF58DA-A2B6-48EB-AF07-52A85E577467}">
+							<ChildrenList>
+								<Action Name="" ID="{88B28B55-BD42-4BF0-95E1-99072491C95E}" ShortID="669559150">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Falling" ID="{337EC91E-FC66-4652-873E-A820423A3BF4}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AMB" ID="{40934574-AEBB-4EA4-A652-B02F06DF4FD5}" ShortID="1023727802">
+					<ChildrenList>
+						<Event Name="WM_CM_AMB_Wind_LP" ID="{9E5ACBF6-C519-4D7B-97AC-6C3C6F14BF75}">
+							<ChildrenList>
+								<Action Name="" ID="{39286836-99A5-47E8-BA0A-03FBDE96735E}" ShortID="317600245">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{438F572F-5768-4FA3-B181-95F6F85AD597}" WorkUnitID="{E74C2446-022E-4389-A211-7A7ED5B71B7A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{2AE55660-640D-45E1-8ACB-A08C04AF85D8}" ShortID="885484239">
+					<ChildrenList>
+						<Event Name="WM_CM_MUS_Looper" ID="{44F8DFA4-563D-4F04-9C7B-A6A4912BE3E9}">
+							<ChildrenList>
+								<Action Name="" ID="{C202FE55-5016-4826-8942-E1CFD9F06834}" ShortID="435706703">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{B55B21FB-AF7C-4D10-872B-C6FFE5C2488E}" WorkUnitID="{555877F2-D75C-4886-BE50-F5F8B27A391C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WM_CM_MUS_STT_TFTremeloIn" ID="{20A4870C-4DBB-4A94-90F9-B4CA76767E2F}"/>
+						<Event Name="WM_CM_MUS_STT_TFTremeloOut" ID="{8C26408C-932B-4076-9E07-0AB0BF2ED691}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

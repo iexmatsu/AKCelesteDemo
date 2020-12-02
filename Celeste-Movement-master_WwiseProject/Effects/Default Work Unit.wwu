@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FDF32220-446B-4712-AE51-C5E099852E6A}" SchemaVersion="97">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{FDF32220-446B-4712-AE51-C5E099852E6A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="TimeFreezeL" ID="{32AF4737-6F0B-4507-A929-7F4D7D5858A2}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="TimeFreezeL" ID="{9C8512CD-87C3-40DE-9D69-FD96C6E1D518}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="RecordGrain" ID="{BF3BED8C-4FFA-4A60-BE10-6B0A2B58DD25}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+				<Effect Name="TimeFreezeR" ID="{D34F02E8-3E12-4BA9-A7E2-EE80DBD65BFA}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="TimeFreezeR" ID="{84746962-2B79-4520-A3B5-677844CCBFF1}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

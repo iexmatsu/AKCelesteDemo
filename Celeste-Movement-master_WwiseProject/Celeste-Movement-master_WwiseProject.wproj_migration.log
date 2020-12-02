@@ -1,0 +1,8 @@
+Project migration to XML Schema (XSD) version 95 is completed.
+Project migration to XML Schema (XSD) version 96 is completed.
+Project migration to XML Schema (XSD) version 97 is completed.
+The Plug-in 'HvSampleDivider' was not found for '\Actor-Mixer Hierarchy\Default Work Unit\AMB\HvSampleDivider_(Custom)'. Edition and playback won't be available for this object.
+'\Actor-Mixer Hierarchy\Default Work Unit\AMB\HvSampleDivider_(Custom)' uses the audio effect plugin 'HvSampleDivider', which is not installed.
+The Plug-in 'HvSampleDivider' was not found for '\Actor-Mixer Hierarchy\Default Work Unit\Music\HvSampleDivider_(Custom)'. Edition and playback won't be available for this object.
+'\Actor-Mixer Hierarchy\Default Work Unit\Music\HvSampleDivider_(Custom)' uses the audio effect plugin 'HvSampleDivider', which is not installed.
+Some new object properties have been added or obsolete properties deleted. The project file was updated. These changes will not have an impact on your project.

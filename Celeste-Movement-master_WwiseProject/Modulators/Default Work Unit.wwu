@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D7C32510-D614-4D1A-A493-042D779DD8FD}" SchemaVersion="97">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{D7C32510-D614-4D1A-A493-042D779DD8FD}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Jump_Rise" ID="{B01C3661-3ED0-4400-BD0C-19A4CCB413A8}" ShortID="699136856">
+					<PropertyList>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.5"/>
+						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.11"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+				<ModulatorEnvelope Name="Dash_Whoosh_ADSR" ID="{18CB91FA-E27D-47D9-893C-EC867A642777}" ShortID="915366195"/>
+				<ModulatorEnvelope Name="Dash_Bass_ADSR" ID="{9A49C8FC-FA68-41B1-A649-DA31790F3EB7}" ShortID="184289880">
+					<PropertyList>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.8"/>
+						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+				<ModulatorLfo Name="AMB_Wind_LFO" ID="{942BC13F-46F3-406E-9FFB-F62A76CEC9C2}" ShortID="384858479">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="5">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9032F7EF-21B3-4E5A-9813-6EF39A7023F2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoSmoothing" Type="Real64" Value="60"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorEnvelope Name="WallClimbPitchEnv" ID="{CFF1BA90-712C-40E1-8373-C1B49CD481E2}" ShortID="705735821">
+					<PropertyList>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.05"/>
+						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.1"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+				<ModulatorLfo Name="LFO_TIME_01" ID="{A408A0F7-6C33-4011-B25B-49E1D3BAA00A}" ShortID="417263288">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="LFO_TIME_02" ID="{712C7E04-5E16-41D2-B316-2447161670EC}" ShortID="608930658">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="S&amp;H_Robo_Voice" ID="{F091759E-A393-4547-91E4-D268C7B61B0D}" ShortID="976748015">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="30">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{77228AAC-D026-4DC6-942A-9BC1857C937C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-20"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.3">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{502059E0-81F6-4312-B04E-39C82133BFDA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-0.2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoInitialPhase" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{87EBEF30-32E7-4DB0-A3EC-EDB6903AAAF9}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="180"/>
+											<Property Name="Min" Type="Real64" Value="-180"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoWaveform" Type="int32" Value="1"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorEnvelope Name="FallingLPF" ID="{215C19F8-5E11-40E1-95AC-5429487A9222}" ShortID="105368309">
+					<PropertyList>
+						<Property Name="EnvelopeAttackCurve" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.5"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

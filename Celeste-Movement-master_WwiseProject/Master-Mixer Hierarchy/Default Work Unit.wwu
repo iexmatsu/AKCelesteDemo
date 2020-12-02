@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{EC6916FC-FCE1-4AE8-A631-8BA828C2FB96}" WorkUnitID="{9553C856-4A3B-4562-A752-9E089AB172A5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="BitCrusher" ID="{2A92A1E9-5D94-4365-BAF3-89328A396F1A}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="HvHCZBitcrusher_(Custom)" ID="{3CEDF619-6E3E-40CC-901D-97DB8479A85D}" ShortID="1019271188" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+											<PropertyList>
+												<Property Name="SampleRateDivisionL" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{C5D5A7BF-76BB-4BCB-99EE-76D184C9BAF1}" ShortID="45319400">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="TimeFreezeL" ID="{9C8512CD-87C3-40DE-9D69-FD96C6E1D518}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C692FDD6-581D-4C7F-8E97-AD140838D8D7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>48000</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>4</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="SampleRateDivisionR" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{4931D444-0562-4602-B576-31981F9C8177}" ShortID="627639339">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="TimeFreezeR" ID="{84746962-2B79-4520-A3B5-677844CCBFF1}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{6423042E-0521-4A47-88F9-AF3FDC7FF76C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>48000</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>4</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Music" ID="{A3290D8D-BC1D-4145-A25E-5E0A7CFB0FE2}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5.05904238602116</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Color" Type="int16" Value="15"/>
+										<Property Name="Highpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{F0EB674A-51DE-4389-8395-922FE2E4719D}" ShortID="54072102">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{34185D6A-35DE-493A-8420-0253151ECE27}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>20</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<Bus Name="Music_Child" ID="{86ECB071-8C88-49B7-A9DA-DCCF23309A93}">
+											<PropertyList>
+												<Property Name="BypassEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{D52E9162-48C3-4AA6-A15E-F3A7ECB0DA60}" ShortID="754361965">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{DEDEC6D9-2956-4B51-93E4-997F38E6687F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.01</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{C27BC789-23F5-445E-94ED-11B97F02763F}" ShortID="667139496">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2E2F3E09-7B02-4E2A-BCB1-B8C0C318BE11}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>20</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Tremolo_(Custom)" ID="{F3653986-3E1A-4A7B-A8D1-41BB1E1795BC}" ShortID="504257581" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+															<PropertyList>
+																<Property Name="ModDepth" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{75543CEF-E99D-4B6E-AAED-2FBE1624E194}" ShortID="652120706">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{73F6E68D-21A7-4235-A499-A0B7F9713E2A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-100</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Log3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>-100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModFrequency" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{F17E175B-1024-48DD-950F-DD1BC22B9195}" ShortID="517453481">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{822F6376-F175-49C3-9BA5-0DFC55C5F64D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="5"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0.02</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Log2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.5</XPos>
+																						<YPos>20</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0.02</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_Mus" ID="{C8239CBF-3FE0-4E47-A6A4-8FDC5FB7AD48}" WorkUnitID="{4755FA77-B05C-4253-9403-4BEF5E91BF86}"/>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StatePropertyList>
+													<Property Name="UserAuxSendVolume0"/>
+												</StatePropertyList>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="TimeFreezeOnOrOff" ID="{CBFB4C90-039C-4924-85FC-25073F8A133A}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Off" ID="{4C673486-5D37-4447-8AC5-F37F78407256}"/>
+														<CustomState Name="" ID="{AF022F6B-009B-41BC-874D-1420CA793234}" ShortID="406786972"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="On" ID="{96CEE1D5-C9BE-4636-8195-39356C2FC1FE}"/>
+														<CustomState Name="" ID="{E47DA575-6F5A-4A86-9993-54C6C15FE83E}" ShortID="332402824">
+															<PropertyList>
+																<Property Name="UserAuxSendVolume0" Type="Real64" Value="96"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</Bus>
+										<AuxBus Name="Reverb_Mus" ID="{C8239CBF-3FE0-4E47-A6A4-8FDC5FB7AD48}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="BusVolume"/>
+											<Property Name="Highpass"/>
+											<Property Name="Lowpass"/>
+											<Property Name="Pitch"/>
+											<Property Name="UserAuxSendVolume0"/>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="AMB" ID="{0FD55FA1-5619-4B2C-B3F7-8C6F950FD335}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-1.05517250700249</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Color" Type="int16" Value="17"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Character" ID="{F030E65D-6C63-4978-9734-AC2224858DC8}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>9.72315174092757</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="CharFX" ID="{A84FB363-D099-456E-A3FA-EBBC11732E28}">
+									<ChildrenList>
+										<AuxBus Name="Reverb_Char" ID="{8432225B-B58D-4D49-ABA2-87D5DCB46072}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="WwiseMeter" ID="{2AD015F8-7578-4F9A-9AF7-DE3311A78B4A}">
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Meter_(Custom)" ID="{C82E3D18-288C-4518-9723-7C7CFE81ED91}" ShortID="176056676" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<PropertyList>
+																<Property Name="AttackTime" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{7FBE4C0B-77D1-40D7-8445-AC7EA431BE1F}" ShortID="220051011">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="TalkingVol" ID="{5DC51D85-F658-4CEA-8BE1-A7466AC4834D}" WorkUnitID="{5D739F41-3837-45AF-AAD9-18A69D94B713}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{09AF2407-C755-4044-9403-DA23633220EA}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<PluginData>
+	<GameParameter Name="TalkingVol" ID="{5DC51D85-F658-4CEA-8BE1-A7466AC4834D}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise_Gain_(Custom)" ID="{06F2502C-4E72-4116-9666-770A969F73EA}" ShortID="742670267" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+															<PropertyList>
+																<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Idle_Ono" ID="{AD02EE5E-5359-4507-98B7-D706DFD5FCC4}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="HvHCZBitcrusher_(Custom)" ID="{93454DA9-AB73-49FF-B725-16CE66F9F547}" ShortID="985397227" PluginName="HvHCZBitcrusher" CompanyID="64" PluginID="17049" PluginType="3">
+													<PropertyList>
+														<Property Name="SampleRateDivisionL" Type="Real32" Value="8000"/>
+														<Property Name="SampleRateDivisionR" Type="Real32" Value="8000"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

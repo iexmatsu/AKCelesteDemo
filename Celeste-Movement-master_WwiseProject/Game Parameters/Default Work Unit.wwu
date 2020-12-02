@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5D739F41-3837-45AF-AAD9-18A69D94B713}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{5D739F41-3837-45AF-AAD9-18A69D94B713}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="TimeFreezeL" ID="{9C8512CD-87C3-40DE-9D69-FD96C6E1D518}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="40"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TimeFreezeR" ID="{84746962-2B79-4520-A3B5-677844CCBFF1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="40"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="50"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="50"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-8"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VelocityX" ID="{3AB445F4-62F5-415A-9D27-9189CCDA28B0}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="50"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="50"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="8"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TalkingVol" ID="{5DC51D85-F658-4CEA-8BE1-A7466AC4834D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TestListenerCone" ID="{925ED119-3864-406D-9771-8FD634DC3782}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

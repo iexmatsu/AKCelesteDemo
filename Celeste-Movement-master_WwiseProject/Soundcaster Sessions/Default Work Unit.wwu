@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9B4216AC-5892-4411-AE4F-FA383E271FB4}" SchemaVersion="97">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{9B4216AC-5892-4411-AE4F-FA383E271FB4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TestSFX" ID="{8FF5A3EE-823E-48F1-80FE-3C7CEF9CD79A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music" ID="{B55B21FB-AF7C-4D10-872B-C6FFE5C2488E}" WorkUnitID="{555877F2-D75C-4886-BE50-F5F8B27A391C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="TestListenerCone" ID="{925ED119-3864-406D-9771-8FD634DC3782}"/>
+							<Value>-180</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TimeFreezeL" ID="{9C8512CD-87C3-40DE-9D69-FD96C6E1D518}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="VelocityX" ID="{3AB445F4-62F5-415A-9D27-9189CCDA28B0}"/>
+							<Value>6.43062200956938</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TimeFreezeR" ID="{84746962-2B79-4520-A3B5-677844CCBFF1}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TimeFreeze" ID="{4516613A-C1F3-4797-8DD2-054A6923D0A7}"/>
+							<Value>0.140388768898488</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="VelocityY" ID="{EAEAF6A2-032C-4CD1-9906-02B29CA741BE}"/>
+							<Value>-8</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TalkingVol" ID="{5DC51D85-F658-4CEA-8BE1-A7466AC4834D}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Off" ID="{4C673486-5D37-4447-8AC5-F37F78407256}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
